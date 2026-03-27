@@ -1,0 +1,73 @@
+# ============================================
+# HuntMode .gitignore
+# Security research project — strict exclusions
+# ============================================
+
+# --- Secrets & Credentials ---
+.env
+.env.*
+*.env
+credentials*
+secrets*
+tokens*
+*.key
+*.pem
+*.p12
+*.pfx
+
+# --- Target-Specific Data (real targets, real findings) ---
+targets/
+reports/
+
+# --- Evidence & Session Data ---
+evidence/
+*.har
+*.sqlite
+*.db
+cookies*
+session*
+*.webm
+*.mp4
+
+# --- Claude / AI Config ---
+.claude/
+CLAUDE.md
+
+# --- Python ---
+__pycache__/
+*.pyc
+*.pyo
+*.egg-info/
+venv/
+.venv/
+*.eggs/
+dist/
+build/
+
+# --- Node ---
+node_modules/
+
+# --- OS ---
+.DS_Store
+Thumbs.db
+*.swp
+*.swo
+*~
+
+# --- IDE ---
+.vscode/
+.idea/
+*.code-workspace
+
+# --- PoC Scripts & Research (contain vulnerability details) ---
+scripts/poc-*
+keycloak-bug-bounty-research.md
+
+# --- Recon Output ---
+recon/output/
+*.txt.bak
+
+# --- Misc ---
+*.log
+*.tmp
+*.bak
